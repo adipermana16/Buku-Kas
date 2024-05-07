@@ -4,7 +4,7 @@ import { NavigationAction, NavigationContainer } from "@react-navigation/native"
 import { createNativeTabsNavigator } from "@react-navigation/native-Tabs";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import Home from './screens/Home';
+import Home from './screens/Home'; 
 import About from './screens/About';
 import Beranda from "./screens/Beranda";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";

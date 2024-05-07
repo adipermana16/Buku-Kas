@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import {TouchableOpacity, Linking} from 'react-native';
+import {TouchableOpacity, Linking, TextInput} from 'react-native';
 import React from 'react';
 import About from './About';
 import { Button } from 'react-native';
@@ -60,7 +60,10 @@ function Home({navigation}) {
   return (
     <View style={styles.nav}>
       <View style={styles.container}>
-        <Button title='BUKU KAS' />
+        <Text style={styles.buk}>BUKU KAS</Text>
+        <TextInput
+        style={styles.in}placeholder='Masukkan Text'/>
+        <Button title="cari"/>
         <View style={styles.tombol}>
         <TouchableOpacity onPress={handlePress}>
             <Text style={styles.Text}>Semua</Text>
@@ -84,10 +87,37 @@ function Home({navigation}) {
         <Text style={styles.tap}>Kamu Menerima</Text>
         <Text style={styles.tap}>Kamu Membayar</Text>
       </View>
-      <View style={styles.conten}>
-        <Text></Text>
+      <View>
+        <Text style={styles.niv}></Text>
       </View>
-    </View>
+      <View>
+        <Text style={styles.niv}></Text>
+      </View>
+      <View>
+        <Text style={styles.niv}></Text>
+      </View>
+      <View>
+        <Text style={styles.niv}></Text>
+      </View>
+      <View>
+        <Text style={styles.niv}></Text>
+      </View>
+      <View>
+        <Text style={styles.niv}></Text>
+      </View>
+      <View>
+        <Text style={styles.niv}></Text>
+      </View>
+      <View>
+        <Text style={styles.niv}></Text>
+      </View>
+      <View>
+        <Text style={styles.niv}></Text>
+      </View>
+      <View>
+        <Text style={styles.niv}></Text>
+      </View>
+      </View>
   );
 }
 
@@ -96,6 +126,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#B0C4DE',
     padding: 10,
     color: 'blue',
+  },
+  buk:{
+    color:'#000000',
+    backgroundColor:'#B0C4DE',
+    textAlign:'center',
+    borderRadius:10,
+    fontSize:30,
+    fontWeight:'bold',
   },
   tombol: {
     margin: 10,
@@ -108,6 +146,11 @@ const styles = StyleSheet.create({
     color: '#000000',
     fontSize: 25,
     marginLeft:10,
+  },
+  in:{
+    textAlign:'center',
+    height:50,
+    color:'#000000',
   },
   A: {
     color: '#FFFFE0',
@@ -125,7 +168,7 @@ const styles = StyleSheet.create({
     fontSize:20,
   },
   nav:{
-    backgroundColor:'blue',
+    backgroundColor:'#ffffff',
     flex:1,
   },
   conten:{
@@ -156,6 +199,14 @@ const styles = StyleSheet.create({
     marginLeft:20,
     backgroundColor:'#FAF0E6',
     borderRadius:5,
+  },
+  niv:{
+    color:'#ffffff',
+    textAlign:'center',
+    backgroundColor:'#808080',
+    marginTop:10,
+    height:30,
+    fontSize:30,
   },
 });
 
